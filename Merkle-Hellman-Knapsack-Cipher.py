@@ -5,19 +5,10 @@ import random
 import math
 import os
 import struct
-'''
-Author: ジョシュアモル
-Date: March, 6, 2020
-Contact: devr4ndom@gmail.com
-Version: 1
-'''
 
-'''
-Source:        Paul Nelson Baker
-Source:        hivert
-Website:       https://stackoverflow.com/questions/18940194/using-extended-euclidean-algorithm-to-create-rsa-private-key
-Website:       https://stackoverflow.com/questions/42422921/multiple-subset-sum-calculation
-'''
+
+
+
 def egcd(a, b):
     modulus = a
     x, lastX = 0, 1
