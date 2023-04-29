@@ -1,7 +1,7 @@
 from knap import gen_keys, encode, decode
 
 # Generate keys
-p, m, n, r = gen_keys()
+pub_key, priv_key, p, m, n  = gen_keys()
 
 # Print public key
 pub_key = [str(pi) for pi in p]

@@ -7,11 +7,15 @@ m = int(input("Enter m: "))
 cypher_text = input("Enter cypher_text: ")
 
 try:
+    # Generate a superincreasing sequence
+    s = gen_super(len(p))
+    
     # Calculate the public key
     pub_key = [(r * p[i]) % m for i in range(len(p))]
     
     # Calculate the private key
     priv_key = [(s[i] * pow(p[i], -1, m)) % m for i in range(len(p))]
+    
     modulus = m
     decrypted_text = decode(cypher_text, priv_key, pub_key, modulus)
     print(f"Decrypted message: {decrypted_text}")
